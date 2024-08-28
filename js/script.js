@@ -1,11 +1,9 @@
 
-/*MILESTONE 1:
-Stampare su console le informazioni di nome, ruolo e la stringa della foto
 
-MILESTONE 2:
-Stampare le stesse informazioni su DOM sottoforma di stringhe
+/*MILESTONE 2:
+Stampare le stesse informazioni su DOM sottoforma di stringhe*/
 
-BONUS 1:
+/*BONUS 1:
 Trasformare la stringa foto in una immagine effettiva
 
 BONUS 2:
@@ -49,3 +47,10 @@ const teamMembers = [
     {fullName:'Barbara Ramos',job:'Graphic Designer',photo:'barbara-ramos-graphic-designer.jpg'}
 ];
 console.table(teamMembers);
+
+/*MILESTONE 1:
+Stampare su console le informazioni di nome, ruolo e la stringa della foto*/
+// vado a scorrere un array uso quindi for of 
+for (let teamMember of teamMembers){
+    console.log(`Nome dipendente: ${teamMember.fullName}. Ruolo dipendente: ${teamMember.job}. Foto dipendente:${teamMember.photo}`);
+}
