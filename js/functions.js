@@ -7,11 +7,11 @@ function createImage(foto){
 }
 
 // funzione per creare un elemento in pagina
-function createCard(fullName,job,foto){
+function createCard(foto,fullName,job,){
     let card = document.createElement('div');
     card.classList.add('card');
+    card.append(foto);
     card.append(fullName);
     card.append(job);
-    card.append(foto);
     return card;
 }

@@ -53,7 +53,7 @@ for (let teamMember of teamMembers){
        /*BONUS 1: Trasformare la stringa foto in una immagine effettiva*/
     const img = createImage(teamMember.photo);
     /*BONUS 2:Organizzare i singoli membri in card/schede (allego qualche immagine per darvi ispirazione*/
-    const cardTeam = createCard(teamMember.fullName, teamMember.job, img);
+    const cardTeam = createCard( img, teamMember.fullName, teamMember.job);
     boxMembers.appendChild(cardTeam);
 }
 
