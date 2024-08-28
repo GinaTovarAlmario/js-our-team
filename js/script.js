@@ -1,11 +1,8 @@
 
-/*BONUS 1:
-Trasformare la stringa foto in una immagine effettiva
+/*BONUS 2:
+Organizzare i singoli membri in card/schede (allego qualche immagine per darvi ispirazione*/
 
-BONUS 2:
-Organizzare i singoli membri in card/schede (allego qualche immagine per darvi ispirazione
-
-Consigli del giorno:
+/*Consigli del giorno:
 Ragioniamo come sempre a step.
 Prima la logica in italiano e poi traduciamo in codice.
 E ricordiamoci che console.log() è nostro amico!
@@ -53,8 +50,10 @@ Stampare su console le informazioni di nome, ruolo e la stringa della foto*/
 for (let teamMember of teamMembers){
     let message = `Nome dipendente: ${teamMember.fullName}.Ruolo dipendente: ${teamMember.job}.Foto dipendente: ${teamMember.photo}`;
     console.log(message);
-    /*MILESTONE 2:Stampare le stesse informazioni su DOM sottoforma di stringhe*/
+/*MILESTONE 2:Stampare le stesse informazioni su DOM sottoforma di stringhe*/
     listTeamMembers.innerHTML += message + '<br>';
-    
+       /*BONUS 1: Trasformare la stringa foto in una immagine effettiva*/
+    createImage(teamMember.photo);
+
 }
 
