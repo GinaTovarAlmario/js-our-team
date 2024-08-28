@@ -6,6 +6,18 @@ function createImage(foto){
     return image;
 }
 
+function createNameHeading(name){
+    let nameHeading = document.createElement('h4');
+    nameHeading.innerText = name;
+    return nameHeading;
+}
+
+function createJobTitleHeading(jobTitle){
+    let jobTitleHeading = document.createElement('h5');
+    jobTitleHeading.innerText = jobTitle;
+    return jobTitleHeading;
+}
+
 // funzione per creare un elemento in pagina
 function createCard(foto,fullName,job,){
     let card = document.createElement('div');

@@ -31,6 +31,7 @@ h2{
 #introduction{
     color: gray;
     line-height: 30px;
+    margin: 0 40px;
 }
 #listmembers{
     text-align: center;

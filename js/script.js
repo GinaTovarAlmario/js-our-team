@@ -52,8 +52,12 @@ for (let teamMember of teamMembers){
     // listTeamMembers.innerHTML += message + '<br>';
        /*BONUS 1: Trasformare la stringa foto in una immagine effettiva*/
     const img = createImage(teamMember.photo);
+
+    const nameHeading = createNameHeading(teamMember.fullName);
+    const jobTitle = createJobTitleHeading(teamMember.job);
+
     /*BONUS 2:Organizzare i singoli membri in card/schede (allego qualche immagine per darvi ispirazione*/
-    const cardTeam = createCard( img, teamMember.fullName, teamMember.job);
+    const cardTeam = createCard( img, nameHeading, jobTitle);
     boxMembers.appendChild(cardTeam);
 }
 
