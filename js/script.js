@@ -1,7 +1,4 @@
 
-/*BONUS 2:
-Organizzare i singoli membri in card/schede (allego qualche immagine per darvi ispirazione*/
-
 /*Consigli del giorno:
 Ragioniamo come sempre a step.
 Prima la logica in italiano e poi traduciamo in codice.
@@ -41,6 +38,7 @@ const teamMembers = [
 ];
 // prendo elemento dal DOM
 const listTeamMembers = document.getElementById('listmembers');
+const boxMembers = document.querySelector('.box');
 // faccio una prova di stampa del mio array di oggetti
 console.table(teamMembers);
 
@@ -49,11 +47,13 @@ Stampare su console le informazioni di nome, ruolo e la stringa della foto*/
 // vado a scorrere un array uso quindi for of 
 for (let teamMember of teamMembers){
     let message = `Nome dipendente: ${teamMember.fullName}.Ruolo dipendente: ${teamMember.job}.Foto dipendente: ${teamMember.photo}`;
-    console.log(message);
+     console.log(message);
 /*MILESTONE 2:Stampare le stesse informazioni su DOM sottoforma di stringhe*/
-    listTeamMembers.innerHTML += message + '<br>';
+    // listTeamMembers.innerHTML += message + '<br>';
        /*BONUS 1: Trasformare la stringa foto in una immagine effettiva*/
-    createImage(teamMember.photo);
-
+    const img = createImage(teamMember.photo);
+    /*BONUS 2:Organizzare i singoli membri in card/schede (allego qualche immagine per darvi ispirazione*/
+    const cardTeam = createCard(teamMember.fullName, teamMember.job, img);
+    boxMembers.appendChild(cardTeam);
 }
 

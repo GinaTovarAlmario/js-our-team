@@ -9,9 +9,13 @@ body{
     font-family: sans-serif;
 }
 /* generics */
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
 }
 #title{
     text-align: center;
@@ -31,3 +35,12 @@ h2{
 #listmembers img{
     width: 100%;
 }
+.card{
+    height: 500px;
+    flex-basis: calc(100% / 3 - 20px);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: dodgerblue;
+    border: 1px solid black;
+
+}   
