@@ -1,10 +1,5 @@
-/*Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
-Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
-MILESTONE 0:
-Creare l’array di oggetti con le informazioni fornite.
-
-MILESTONE 1:
+/*MILESTONE 1:
 Stampare su console le informazioni di nome, ruolo e la stringa della foto
 
 MILESTONE 2:
@@ -37,3 +32,20 @@ console.log('Js ok');
 window.addEventListener("load", (event) => {
     console.log("page is fully loaded");
 });
+
+/*Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
+Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
+
+MILESTONE 0:
+Creare l’array di oggetti con le informazioni fornite.*/
+
+// FASE DI PREPARAZIONE
+const teamMembers = [
+    {fullName:'Wayne Barnett',job:'Founder & CEO',photo:'wayne-barnett-founder-ceo.jpg'},
+    {fullName:'Angela Caroll',job:'Chief Editor',photo:'angela-caroll-chief-editor.jpg'},
+    {fullName:'Walter Gordon',job:'Office Manager',photo:'walter-gordon-office-manager.jpg'},
+    {fullName:'Angela Lopez',job:'Social Media Manager',photo:'angela-lopez-social-media-manager.jpg'},
+    {fullName:'Scott Estrada',job:'Developer',photo:'scott-estrada-developer.jpg'},
+    {fullName:'Barbara Ramos',job:'Graphic Designer',photo:'barbara-ramos-graphic-designer.jpg'}
+];
+console.table(teamMembers);
