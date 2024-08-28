@@ -1,8 +1,4 @@
 
-
-/*MILESTONE 2:
-Stampare le stesse informazioni su DOM sottoforma di stringhe*/
-
 /*BONUS 1:
 Trasformare la stringa foto in una immagine effettiva
 
@@ -46,11 +42,19 @@ const teamMembers = [
     {fullName:'Scott Estrada',job:'Developer',photo:'scott-estrada-developer.jpg'},
     {fullName:'Barbara Ramos',job:'Graphic Designer',photo:'barbara-ramos-graphic-designer.jpg'}
 ];
+// prendo elemento dal DOM
+const listTeamMembers = document.getElementById('listmembers');
+// faccio una prova di stampa del mio array di oggetti
 console.table(teamMembers);
 
 /*MILESTONE 1:
 Stampare su console le informazioni di nome, ruolo e la stringa della foto*/
 // vado a scorrere un array uso quindi for of 
 for (let teamMember of teamMembers){
-    console.log(`Nome dipendente: ${teamMember.fullName}. Ruolo dipendente: ${teamMember.job}. Foto dipendente:${teamMember.photo}`);
+    let message = `Nome dipendente: ${teamMember.fullName}.Ruolo dipendente: ${teamMember.job}.Foto dipendente: ${teamMember.photo}`;
+    console.log(message);
+    /*MILESTONE 2:Stampare le stesse informazioni su DOM sottoforma di stringhe*/
+    listTeamMembers.innerHTML += message + '<br>';
+    
 }
+

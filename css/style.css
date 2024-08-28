@@ -15,12 +15,16 @@ body{
 }
 #title{
     text-align: center;
-    margin: 80px auto;
+    margin: 50px 0;
 }
 h2{
     margin-bottom: 20px;
 }
 #introduction{
     color: gray;
+    line-height: 30px;
+}
+#listmembers{
+    text-align: center;
     line-height: 30px;
 }
